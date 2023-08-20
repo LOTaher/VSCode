@@ -46,12 +46,13 @@
   "editor.fontSize": 15,
   "editor.codeActionsOnSave": {
     "source.addMissingImports": true,
-    "source.organizeImports": true,
-    "source.removeUnused": true
+    "source.organizeImports": false,
+    "source.removeUnused": false
   },
   "vim.leader": "<Space>",
   "vim.foldfix": true,
   "vim.hlsearch": true,
+  "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
   "vim.highlightedyank.textColor": "white",
@@ -73,7 +74,7 @@
     },
     {
       "before": ["[", "d"],
-      "commands": ["editor.action.mark.previous"]
+      "commands": ["editor.action.mark.prev"]
     },
     {
       "before": ["leader", "q"],
