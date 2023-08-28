@@ -18,7 +18,7 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
 
   "window.zoomLevel": 1,
-  "workbench.colorTheme": "One Hunter Theme",
+  "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "vscode-icons",
   "workbench.statusBar.visible": false,
   "workbench.startupEditor": "none",
@@ -49,6 +49,9 @@
     "source.organizeImports": false,
     "source.removeUnused": false
   },
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   "vim.leader": "<Space>",
   "vim.foldfix": true,
   "vim.hlsearch": true,
