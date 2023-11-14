@@ -16,11 +16,8 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-
-  "window.zoomLevel": 1,
   "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.statusBar.visible": false,
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
   "explorer.confirmDelete": false,
@@ -34,7 +31,8 @@
     "*": true,
     "plaintext": true,
     "markdown": true,
-    "scminput": false
+    "scminput": false,
+    "kotlinscript": false
   },
   "editor.minimap.enabled": false,
   "editor.lineNumbers": "relative",
@@ -43,6 +41,7 @@
   "editor.linkedEditing": true,
   "editor.suggest.insertMode": "replace",
   "editor.inlineSuggest.enabled": true,
+  "editor.fontFamily": "Geist Mono",
   "editor.fontSize": 14,
   "editor.codeActionsOnSave": {
     "source.addMissingImports": true,
@@ -90,5 +89,7 @@
     { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
     { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
-  ]
+  ],
+  "window.zoomLevel": 1,
+  "go.toolsManagement.autoUpdate": true
 }
