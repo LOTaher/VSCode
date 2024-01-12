@@ -12,16 +12,18 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  "breadcrumbs.enabled": true,
+  "breadcrumbs.enabled": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorTheme": "Atom One Dark",
+  "workbench.colorTheme": "Gruvbox Dark Medium",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
   "workbench.sideBar.location": "right",
-  "window.zoomLevel": 0.75,
+  "workbench.editor.showTabs": "none",
+  "workbench.statusBar.visible": false,
+  "window.title": "${dirty}neovim${separator}${activeEditorShort}",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "extensions.autoUpdate": "onlyEnabledExtensions",
@@ -44,12 +46,13 @@
   "editor.suggest.insertMode": "replace",
   "editor.inlineSuggest.enabled": true,
   "editor.fontFamily": "Geist Mono",
-  "editor.fontSize": 16,
+  "editor.fontSize": 18,
   "editor.codeActionsOnSave": {
-    "source.addMissingImports": true,
-    "source.organizeImports": false,
-    "source.removeUnused": false
+    "source.addMissingImports": "explicit",
+    "source.organizeImports": "never",
+    "source.removeUnused": "never"
   },
+  "editor.stickyScroll.enabled": true,
   "terminal.integrated.defaultProfile.osx": "fish",
   "terminal.integrated.fontSize": 15,
   "terminal.external.osxExec": "iTerm.app",
@@ -93,7 +96,7 @@
     { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
   ],
-  "window.zoomLevel": 1,
   "go.toolsManagement.autoUpdate": true,
-  "workbench.statusBar.visible": false
+  "deno.path": "/opt/homebrew/Cellar/deno/1.38.5",
+  "workbench.activityBar.location": "hidden"
 }
