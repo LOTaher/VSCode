@@ -21,7 +21,7 @@
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
   "workbench.sideBar.location": "right",
-  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.showTabs": "none",
   "workbench.statusBar.visible": false,
   "window.title": "${dirty}neovim${separator}${activeEditorShort}",
   "explorer.confirmDelete": false,
