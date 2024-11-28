@@ -16,14 +16,11 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorTheme": "Gruvbox Dark Medium",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
   "workbench.sideBar.location": "right",
-  "workbench.editor.showTabs": "none",
-  "workbench.statusBar.visible": false,
-  "window.title": "${dirty}neovim${separator}${activeEditorShort}",
+  "workbench.editor.showTabs": "single",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "extensions.autoUpdate": "onlyEnabledExtensions",
@@ -31,13 +28,6 @@
   "git.confirmSync": false,
   "git.autofetch": true,
   "git.enableSmartCommit": true,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": true,
-    "scminput": false,
-    "kotlinscript": false
-  },
   "editor.minimap.enabled": false,
   "editor.lineNumbers": "relative",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -45,8 +35,8 @@
   "editor.linkedEditing": true,
   "editor.suggest.insertMode": "replace",
   "editor.inlineSuggest.enabled": true,
-  "editor.fontFamily": "Geist Mono",
-  "editor.fontSize": 18,
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 16,
   "editor.codeActionsOnSave": {
     "source.addMissingImports": "explicit",
     "source.organizeImports": "never",
@@ -55,8 +45,6 @@
   "editor.stickyScroll.enabled": true,
   "terminal.integrated.defaultProfile.osx": "bash",
   "terminal.integrated.fontSize": 15,
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   "vim.leader": "<Space>",
   "vim.foldfix": true,
   "vim.hlsearch": true,
@@ -64,32 +52,6 @@
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
   "vim.highlightedyank.textColor": "white",
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["<leader>", "a"],
-      "commands": ["vscode-harpoon.addEditor"]
-    },
-    {
-      "before": ["<leader>", "e"],
-      "commands": ["vscode-harpoon.editEditors"]
-    },
-    {
-      "before": ["<c-h>"],
-      "commands": ["vscode-harpoon.gotoEditor1"]
-    },
-    {
-      "before": ["<c-j>"],
-      "commands": ["vscode-harpoon.gotoEditor2"]
-    },
-    {
-      "before": ["<c-k>"],
-      "commands": ["vscode-harpoon.gotoEditor3"]
-    },
-    {
-      "before": ["<c-l>"],
-      "commands": ["vscode-harpoon.gotoEditor4"]
-    }
-  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["<S-h>"], "commands": [":bprevious"] },
     { "before": ["<S-l>"], "commands": [":bnext"] },
@@ -99,7 +61,7 @@
       "after": ["g", "g", "V", "G"]
     },
     {
-      "before": ["leader", "k"],
+      "before": ["<S-k>"],
       "commands": ["editor.action.showHover"]
     },
     {
@@ -109,10 +71,6 @@
     {
       "before": ["[", "d"],
       "commands": ["editor.action.mark.prev"]
-    },
-    {
-      "before": ["leader", "q"],
-      "commands": ["editor.action.quickFix"]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -122,9 +80,14 @@
     { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
   ],
-  "go.toolsManagement.autoUpdate": true,
-  "deno.path": "/opt/homebrew/Cellar/deno/1.38.5",
-  "workbench.activityBar.location": "hidden",
-  "zenMode.centerLayout": true,
-  "zenMode.restore": false
+  "totalTypeScript.hideAllTips": false,
+  "totalTypeScript.hideBasicTips": true,
+  "totalTypeScript.hiddenTips": ["passing-generics-to-types"],
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "pixelbyte.love2d.path": "/Applications/love.app/Contents/MacOS/love"
 }
